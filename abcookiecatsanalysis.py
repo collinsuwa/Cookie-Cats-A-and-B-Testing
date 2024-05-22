@@ -24,6 +24,8 @@ sns.set(style="whitegrid")
 #Read the data
 df = pd.read_csv("cookie_cats.csv")
 
+"""# **Data Exploration**"""
+
 #Check first few observations
 df.head()
 
@@ -52,6 +54,8 @@ When a player installed the game, he or she was randomly assigned to either gate
 
 # Total Number of unique player
 df["userid"].nunique()
+
+"""# **Players Game Rounds Distribution**"""
 
 # Check for missing values
 df.isnull().sum()
@@ -91,7 +95,7 @@ df[df["sum_gamerounds"]== 300]["userid"].count()
 - The plot reveals an inverse relationship between the total number of game rounds played and the number of users. As the total number of game rounds increases, the number of users who engaged with the game extensively decreases. This suggests that while a large number of players may have installed the game, only a smaller subset actively participated for an extended period, with the majority of users playing relatively few rounds.
 - 3994 players never played the game after installing and 15 players played 300 times.
 
-# **Analyze player retention**
+# **Analyze Player Retention**
 - Calculating 1-day and 7-days retention for each A/B group
 """
 
@@ -124,7 +128,7 @@ plt.show()
 - There was a slight decrease in 1-day retention when the gate was moved to level 40 (44.2%) compared to the control group when it was at level 30 (44.8%).
 - A decrease in 7-day retention when the gate was moved to level 40 (18.2%) compared to the control group when it was at level 30 (19.8%)
 
-# **Bivariate analysis**
+# **Bivariate Analysis**
 """
 
 df.columns
@@ -338,7 +342,7 @@ for variable in df_cat.columns:
     else:
         print(f"There is no significant difference in conversion rates across {variable}.")
 
-"""# **Analyze player engagement**"""
+"""# **Analyze Player Engagement**"""
 
 # Analyze engagement metrics around the barrier levels
 barrier_levels = df[df['version'] == 'gate_30']['sum_gamerounds'].unique()
