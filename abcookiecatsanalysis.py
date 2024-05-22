@@ -357,12 +357,15 @@ for level in barrier_levels:
 - If we want to keep retention high — both 1-day and 7-day retention — we should not move the gate from level 30 to level 40. There are, of course, other metrics we could look at, like the number of game rounds played or how much in-game purchases are made by the two AB-groups. But retention is one of the most important metrics.
 - If we don’t retain our player base, it doesn’t matter how much money they spend in-game.
 -  But when the gate is moved to level 40, fewer players make it far enough, and they are more likely to quit the game because they simply got bored of it. Therefore, it makes sense that we keep gate at Level 30
+- Keeping the gate at level 30 appears to be better for retaining players, both in the short-term (1-day) and long-term (7-day).
 
 # **Recommendations:**
-- The introduction of gameplay barriers had a negative impact on player retention rates. Consider optimizing the placement and design of these barriers to minimize the negative effect.
-- Certain barrier levels saw more significant drops in player engagement metrics, such as session duration and level completion. Further investigate these levels and explore alternative barrier implementations.
-- Suggest A/B testing different barrier designs or optional barrier features that could potentially improve the player experience and increase revenue without heavily impacting retention.
+- Optimize the placement and design of gameplay barriers to minimize the negative impact on player retention.
+- Investigate levels with significant drops in player engagement metrics and explore alternative barrier implementations.
+- A/B test different barrier designs or optional barrier features to improve the player experience and increase revenue without heavily impacting retention.
 - Continuously monitor player behavior and engagement data to iteratively refine the barrier implementation and other game features.
+
+Overall, this analysis provides valuable insights into the impact of gameplay barriers on player retention and engagement, and offers guidance for making informed decisions about the game's design and monetization strategy.
 """
 
 from IPython.display import YouTubeVideo
