@@ -52,14 +52,6 @@ The dataset consists of player interaction logs, which include information such 
 
 The A/B test results suggest that the new game feature positively impacts day 1 retention and player engagement, although it does not significantly affect day 7 retention. These findings can help guide future game design and feature implementation decisions.
 
-## Usage
-
-To replicate the analysis, follow these steps:
-1. Clone the repository: `git clone https://github.com/yourusername/AB_Cookie_Cats_Analysis.git`
-2. Navigate to the project directory: `cd AB_Cookie_Cats_Analysis`
-3. Install the required dependencies: `pip install -r requirements.txt`
-4. Run the analysis script: `python analysis.py`
-
 ## Dependencies
 
 - pandas
@@ -67,9 +59,4 @@ To replicate the analysis, follow these steps:
 - matplotlib
 - seaborn
 - scipy
-- scikit-learn
-
-## Contact
-
-For any questions or feedback, please contact [your.email@example.com](mailto:your.email@example.com).
-
+- github
